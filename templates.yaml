@@ -1,0 +1,17 @@
+welcome: |
+  Beef and Dairy Network Unofficial Skill.
+
+welcome_re: |
+  Beef and Dairy Network Unofficial Skill. How may I help you?
+
+welcome_card: |
+  Beef and Dairy Network Unofficial Skill is an Alexa skill written by Alasdair Nicol. The number one Alexa skill for those involved or just interested in the production of beef animals and dairy herds.
+
+stop_bye: |
+  Goodbye!
+
+cancel_bye: |
+  OK, goodbye!
+
+help_text: |
+  Beef and Dairy Network Unofficial Skill is an Alexa skill that does things. This is where the developer would normally explain how to do them.
