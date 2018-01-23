@@ -50,13 +50,35 @@ def handle_launch():
     * Card body: 'welcome_card'
     """
 
-    welcome_text = render_template('welcome')
+    welcome_text = "Hello and welcome to the Beef and Dairy Network Alexa Skill, the number one skill for those involved, or just interested, in the production of beef animals and dairy herds."
+    #render_template('welcome')
     welcome_re_text = render_template('welcome_re')
     welcome_card_text = render_template('welcome_card')
 
     return question(welcome_text).reprompt(welcome_re_text).standard_card(title="Beef and Dairy Network Unofficial Skill",
                                                                           text=welcome_card_text)
 
+@ask.intent('HowManyMeatsIntent')
+def handle_how_many_meats():
+    text = "There are four meats: Beef, Pork, Chicken, and Lamb"
+
+
+@ask.intent('FifthMeatIntent')
+def handle_fifth_meat():
+    text = "There is no fifth meat"
+    return statement(text)
+
+
+@ask.intent('FavouriteMeatIntent')
+def handle_favourite_meat_intent():
+    text = "Hmm, good question. I'd have to say: a plate of rich beef sausages"
+    return statement(text)
+
+
+@ask.intent('SidOnionIntent')
+def handle_sid_onion():
+    text = "Sid Onion is still in jail in Turkey"
+    return statement(text)
 
 # Built-in intents
 #
@@ -71,7 +93,8 @@ def handle_stop():
     """
     (STATEMENT) Handles the 'stop' built-in intention.
     """
-    farewell_text = render_template('stop_bye')
+    #farewell_text = render_template('stop_bye')
+    farewell_text = "Thanks for using the Beef and Dairy Alexa Skill. Beef out!"
     return statement(farewell_text)
 
 
@@ -80,7 +103,8 @@ def handle_cancel():
     """
     (STATEMENT) Handles the 'cancel' built-in intention.
     """
-    farewell_text = render_template('cancel_bye')
+    #farewell_text = render_template('cancel_bye')
+    farewell_text = "Thanks for using the Beef and Dairy Alexa Skill. Beef out!"
     return statement(farewell_text)
 
 
@@ -143,6 +167,10 @@ def session_ended():
 
     """
     return statement("")
+
+
+def lambda_handler(event, _context):
+    return ask.run_aws_lambda(event)
 
 
 if __name__ == '__main__':
