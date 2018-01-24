@@ -56,7 +56,7 @@ def handle_favourite_meat_intent(request, session):
 
 @app.intent('SidOnionIntent')
 def handle_sid_onion(request, session):
-    text = "Sid Onion is still in jail in Turkey. Please donate what you can to Beeves without borders, so that we can get him out of there."
+    text = "Sid Onion is still in jail in Turkey. Beeves without borders are working tirelessly to get him out of there."
     return app.response(text)
 
 
