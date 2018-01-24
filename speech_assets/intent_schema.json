@@ -1,25 +1,144 @@
 {
-  "intents": [
-    {
-      "intent": "AMAZON.StopIntent"
-    },
-    {
-      "intent": "AMAZON.CancelIntent"
-    },
-    {
-      "intent": "AMAZON.HelpIntent"
-    },
-    {
-      "intent": "AMAZON.NoIntent"
-    },
-    {
-      "intent": "AMAZON.YesIntent"
-    },
-    {
-      "intent": "AMAZON.PreviousIntent"
-    },
-    {
-      "intent": "AMAZON.StartOverIntent"
-    }
-  ]
+  "languageModel": {
+    "types": [
+      {
+        "name": "MeatType",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "venison",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "turkey",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "tuna",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "pork",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "beef",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "chicken",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "lamb",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "goat",
+              "synonyms": []
+            }
+          }
+        ]
+      }
+    ],
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": [
+          "quit"
+        ]
+      },
+      {
+        "name": "BeefPluralIntent",
+        "samples": [
+          "What is the plural of beef"
+        ],
+        "slots": []
+      },
+      {
+        "name": "FavouriteBeefIntent",
+        "samples": [
+          "What is your favourite beef dish",
+          "What is your favourite type of beef"
+        ],
+        "slots": []
+      },
+      {
+        "name": "FifthMeatIntent",
+        "samples": [
+          "What is the fifth meat",
+          "Is there a fifth mean"
+        ],
+        "slots": []
+      },
+      {
+        "name": "HowManyMeatsIntent",
+        "samples": [
+          "How many meats are there",
+          "What are the four meats",
+          "What are the four types of meat",
+          "How many types of meat are there"
+        ],
+        "slots": []
+      },
+      {
+        "name": "SidOnionIntent",
+        "samples": [
+          "Where is Sid Onion",
+          "Is Sid Onion still in jail",
+          "Has Sid Onion been freed yet",
+          "Had Sid been freed yet",
+          "Is Sid still in jail",
+          "Where is Sid"
+        ],
+        "slots": []
+      },
+      {
+        "name": "WhichMeatIntent",
+        "samples": [
+          "What type of meat is {meat}",
+          "Which type of meat is {meat}",
+          "What is {meat}",
+          "Which meat is {meat}"
+        ],
+        "slots": [
+          {
+            "name": "meat",
+            "type": "MeatType"
+          }
+        ]
+      }
+    ],
+    "invocationName": "beef dairy network"
+  }
 }
