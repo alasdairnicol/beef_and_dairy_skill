@@ -85,3 +85,6 @@ test_*.json
 test_*.xml
 *~
 .DS_Store
+# Used for building project
+project
+project.zip
