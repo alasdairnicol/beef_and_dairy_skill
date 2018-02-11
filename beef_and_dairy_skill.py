@@ -40,8 +40,9 @@ def handle_cancel_intent(request, session):
 @app.intent('AMAZON.HelpIntent')
 def handle_help_intent(request, session):
     text = "You can ask me, 'what is your favourite beef dish', or, 'How many meats are there'"
-    return app.response(text)
-
+    response = app.response(text)
+    response.end_session = False
+    return response
 
 @app.intent('AMAZON.StopIntent')
 def handle_stop_intent(request, session):
