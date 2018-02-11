@@ -2,6 +2,7 @@
 Beef and Dairy Network Unofficial Skill
 """
 import os
+import random
 
 from echokit import EchoKit
 
@@ -50,7 +51,13 @@ def handle_stop_intent(request, session):
 
 @app.intent('FifthMeatIntent')
 def handle_favourite_meat_intent(request, session):
-    text = "There is no fifth meat"
+    answers = [
+        "There is no fifth meat",
+        "Please stop this dangerous talk about a fifth meat",
+        "Never ask me that again",
+        "What is wrong with you? There are four meats.",
+    ]
+    text = random.choice(answers)
     return app.response(text)
 
 
