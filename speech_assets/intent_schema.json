@@ -97,7 +97,7 @@
         "name": "FifthMeatIntent",
         "samples": [
           "What is the fifth meat",
-          "Is there a fifth mean"
+          "Is there a fifth meat"
         ],
         "slots": []
       },
