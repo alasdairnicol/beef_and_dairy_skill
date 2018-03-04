@@ -1,347 +1,486 @@
 {
-  "languageModel": {
-    "types": [
-      {
-        "name": "MeatType",
-        "values": [
-          {
-            "id": null,
-            "name": {
-              "value": "beef",
-              "synonyms": []
+    "languageModel": {
+        "invocationName": "beef dairy network",
+        "intents": [
+            {
+                "name": "AMAZON.CancelIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.HelpIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.StopIntent",
+                "slots": [],
+                "samples": [
+                    "quit"
+                ]
+            },
+            {
+                "name": "BeefPluralIntent",
+                "slots": [],
+                "samples": [
+                    "What is the plural of beef"
+                ]
+            },
+            {
+                "name": "FavouriteBeefIntent",
+                "slots": [],
+                "samples": [
+                    "What is your favourite food",
+                    "What is your favourite beef meal",
+                    "What is your favourite beef dish",
+                    "What is your favourite type of beef"
+                ]
+            },
+            {
+                "name": "FifthMeatIntent",
+                "slots": [],
+                "samples": [
+                    "What is the fifth meat",
+                    "Is there a fifth meat"
+                ]
+            },
+            {
+                "name": "HowManyMeatsIntent",
+                "slots": [],
+                "samples": [
+                    "How many meats are there",
+                    "What are the four meats",
+                    "What are the four types of meat",
+                    "How many types of meat are there"
+                ]
+            },
+            {
+                "name": "SidOnionIntent",
+                "slots": [],
+                "samples": [
+                    "Where is Sid Onion",
+                    "Is Sid Onion still in jail",
+                    "Has Sid Onion been freed yet",
+                    "Had Sid been freed yet",
+                    "Is Sid still in jail",
+                    "Where is Sid"
+                ]
+            },
+            {
+                "name": "WhichMeatIntent",
+                "slots": [
+                    {
+                        "name": "meat",
+                        "type": "MeatType"
+                    }
+                ],
+                "samples": [
+                    "What type of meat is {meat}",
+                    "Which type of meat is {meat}",
+                    "What is {meat}",
+                    "Which meat is {meat}"
+                ]
+            },
+            {
+                "name": "CheeseAndOnionIntent",
+                "slots": [],
+                "samples": [
+                    "What are Cheese and Onion",
+                    "Who are Cheese and Onion"
+                ]
+            },
+            {
+                "name": "LambIntent",
+                "slots": [],
+                "samples": [
+                    "Is lamb really as dangerous as they say it is",
+                    "Is lamb dangerous",
+                    "Do you like lamb",
+                    "Should I eat lamb"
+                ]
+            },
+            {
+                "name": "PersonIntent",
+                "slots": [
+                    {
+                        "name": "person",
+                        "type": "BeefPersonality"
+                    }
+                ],
+                "samples": [
+                    "What is {person}",
+                    "Tell me about {person}",
+                    "Who is {person}"
+                ]
+            },
+            {
+                "name": "BanyanPoemIntent",
+                "slots": [],
+                "samples": [
+                    "Read me some Michael Banyan",
+                    "Read me something by Michael Banyan",
+                    "Read me Crab Of The Land",
+                    "Read me a poem",
+                    "Read me a Michael Banyan poem "
+                ]
+            },
+            {
+                "name": "WhereIsMichaelIntent",
+                "slots": [],
+                "samples": [
+                    "where is michael",
+                    "Where is michael banyan"
+                ]
             }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "lamb",
-              "synonyms": []
+        ],
+        "types": [
+            {
+                "name": "MeatType",
+                "values": [
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "beef",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "lamb",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "pork",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "chicken",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "turkey",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "venison",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "tuna",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "goat",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "horse",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "weasel",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "sparrow",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "giraffe",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "lizard",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "peregrine falcon",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "spider",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "snow leopard",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "kangaroo",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "fish",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "rabbit",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "pheasant",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "quail",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "salmon",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "prawns",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "veal",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "partridge",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "pigeon",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "duck",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "insects",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "snails",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "seafood",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "reindeer",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "hedgehog",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "crab",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "goose",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "buffalo",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "seal",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "whale",
+                            "synonyms": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "BeefPersonality",
+                "values": [
+                    {
+                        "id": "david",
+                        "name": {
+                            "value": "Dr David Pin",
+                            "synonyms": [
+                                "Dr Pin",
+                                "David Pin"
+                            ]
+                        }
+                    },
+                    {
+                        "id": "les",
+                        "name": {
+                            "value": "Les Cheese",
+                            "synonyms": [
+                                "les"
+                            ]
+                        }
+                    },
+                    {
+                        "id": "boffo",
+                        "name": {
+                            "value": "Boffo",
+                            "synonyms": [
+                                "boffo's clown circus"
+                            ]
+                        }
+                    },
+                    {
+                        "id": "malcom",
+                        "name": {
+                            "value": "Malcolm the bull",
+                            "synonyms": [
+                                "malcolm"
+                            ]
+                        }
+                    },
+                    {
+                        "id": "michael",
+                        "name": {
+                            "value": "Michael Banyan",
+                            "synonyms": [
+                                "poet laureate",
+                                "the poet laureate"
+                            ]
+                        }
+                    },
+                    {
+                        "id": "roy",
+                        "name": {
+                            "value": "Roy Gluck Junior",
+                            "synonyms": [
+                                "Roy",
+                                "Roy Gluck"
+                            ]
+                        }
+                    },
+                    {
+                        "id": "eli",
+                        "name": {
+                            "value": "Eli Roberts",
+                            "synonyms": [
+                                "Eli"
+                            ]
+                        }
+                    },
+                    {
+                        "id": "phillip",
+                        "name": {
+                            "value": "Phillip Mushroom",
+                            "synonyms": [
+                                "philip",
+                                "phil mushroom",
+                                "phillip",
+                                "philip mushroom"
+                            ]
+                        }
+                    }
+                ]
             }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "pork",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "chicken",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "turkey",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "venison",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "tuna",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "goat",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "horse",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "weasel",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "sparrow",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "giraffe",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "lizard",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "peregrine falcon",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "spider",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "snow leopard",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "kangaroo",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "fish",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "rabbit",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "pheasant",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "quail",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "salmon",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "prawns",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "veal",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "partridge",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "pigeon",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "duck",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "insects",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "snails",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "seafood",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "reindeer",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "hedgehog",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "crab",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "goose",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "buffalo",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "seal",
-              "synonyms": []
-            }
-          },
-          {
-            "id": null,
-            "name": {
-              "value": "whale",
-              "synonyms": []
-            }
-          }
         ]
-      }
-    ],
-    "intents": [
-      {
-        "name": "AMAZON.CancelIntent",
-        "samples": []
-      },
-      {
-        "name": "AMAZON.HelpIntent",
-        "samples": []
-      },
-      {
-        "name": "AMAZON.StopIntent",
-        "samples": [
-          "quit"
-        ]
-      },
-      {
-        "name": "BeefPluralIntent",
-        "samples": [
-          "What is the plural of beef"
-        ],
-        "slots": []
-      },
-      {
-        "name": "FavouriteBeefIntent",
-        "samples": [
-          "What is your favourite beef dish",
-          "What is your favourite type of beef"
-        ],
-        "slots": []
-      },
-      {
-        "name": "FifthMeatIntent",
-        "samples": [
-          "What is the fifth meat",
-          "Is there a fifth meat"
-        ],
-        "slots": []
-      },
-      {
-        "name": "HowManyMeatsIntent",
-        "samples": [
-          "How many meats are there",
-          "What are the four meats",
-          "What are the four types of meat",
-          "How many types of meat are there"
-        ],
-        "slots": []
-      },
-      {
-        "name": "SidOnionIntent",
-        "samples": [
-          "Where is Sid Onion",
-          "Is Sid Onion still in jail",
-          "Has Sid Onion been freed yet",
-          "Had Sid been freed yet",
-          "Is Sid still in jail",
-          "Where is Sid"
-        ],
-        "slots": []
-      },
-      {
-        "name": "WhichMeatIntent",
-        "samples": [
-          "What type of meat is {meat}",
-          "Which type of meat is {meat}",
-          "What is {meat}",
-          "Which meat is {meat}"
-        ],
-        "slots": [
-          {
-            "name": "meat",
-            "type": "MeatType"
-          }
-        ]
-      }
-    ],
-    "invocationName": "beef dairy network"
-  }
+    }
 }
