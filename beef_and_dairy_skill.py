@@ -132,7 +132,7 @@ def handle_person_intent(request, session, person):
 
 @app.intent('WhereIsMichaelIntent')
 def handle_where_is_michael_intent(request, session):
-    text = "Michael Banyan is in a secret location. If his whereabouts was revealed, he would be in grave danger from the Bovine Farmers' Union who have already sewn a cow's face onto his face."
+    text = "Michael Banyan is in a secret location. If his whereabouts was revealed, he would be in grave danger from the Bovine Farmers' Union, who have already sewn a cow's face onto his face."
     return app.response(text)
 
 
